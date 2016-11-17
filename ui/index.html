@@ -33,7 +33,10 @@
 
     ];
         var url = urls[Math.floor(Math.random()*urls.length)];
-		window.open( url );// redirect		
+		window.open( url );// redirect
+		localStorage[ 'sites' ] = JSON.stringify( sites );
+		sites = JSON.parse( localStorage['sites'] );
+
 }
 	</script>
 
