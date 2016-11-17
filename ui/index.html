@@ -33,6 +33,9 @@
 
     ];
     
+     var url = urls[Math.floor(Math.random()*urls.length)];
+		window.open( url );// redirect
+    
     if ( localStorage[ 'sites' ] !== undefined ) {
 				loadSites();
 			}
@@ -48,8 +51,6 @@ else
 	var storeSites = function() {
 		localStorage[ 'sites' ] = JSON.stringify( sites );
 	}
-        var url = urls[Math.floor(Math.random()*urls.length)];
-		window.open( url );// redirect		
 }
 	</script>
 
